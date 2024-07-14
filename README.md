@@ -9,4 +9,6 @@ This tool can be used in educational settings to train students to verify their 
 
 In short, The Fun Math Calculator helps users to develop critical thinking, attention , and error-checking skills .
 
+Made by Swaraj
+
 <hr>
