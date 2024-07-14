@@ -12,23 +12,37 @@
 
 <body>
     <div class="container">
+        <div class="out">
+            <div class="in">
                 <div class="box">
-                    <h1>Fun Math Calculator</h1> &nbsp; &#128515; <br>
-                    <input type="number" id="num1" placeholder="Enter 1st number"><br>
-                    <input type="number" id="num2" placeholder="Enter 2nd number"><br>
+                    <h1>Fun Math Calculator</h1> &nbsp; &#128515;
+                    <input type="number" id="num1" placeholder="Enter 1st number">
+                    <input type="number" id="num2" placeholder="Enter 2nd number">
                     <select id="choice">
                         <option value="1">Addition</option>
                         <option value="2">Subtraction</option>
                         <option value="3">Multiplication</option>
                         <option value="4">Division</option>
                         <option value="5">Exponential</option>
-                    </select><br>
-                   
-                           <button> Calculate</button>
-                      
+                    </select>
+                    <div id="out">
+                        <div id="in">
+                            <button onclick="performCalculation()">Calculate</button>
+                        </div>
+                    </div>
+                </div>
                 <hr>
-                <div id="result"><button>Answer</button></div>
-                
+                <div id="result">Answer</div>
+                <div id="feedback-section">
+                    Correct or Wrong: 
+                    <span>
+                        <input type="radio" id="correct" name="feedback" value="correct">
+                        <label for="correct">Correct</label>
+                        <input type="radio" id="wrong" name="feedback" value="wrong">
+                        <label for="wrong">Wrong</label><br>
+                    </span>
+                        <button onclick="updateScoreBasedOnFeedback()">Submit Feedback</button>
+                </div>
                 <div id="score">Score: 0</div>
                 
                 <details>
@@ -41,12 +55,13 @@
                     <summary id="warn">Warning</summary>
                     <div class="fact">
                         Be aware while using any type of calculator and check the answer twice.<br>
-                        <b></b>The calculator is only for fun!</b> Don't use it anywhere (e.g. for education).
+                        <b style="color: rgb(90, 44, 12);">The calculator is only for fun!</b> Don't use it anywhere (e.g. for education).
                     </div>
                 </details>
                 <footer>&copy; By Swaraj Mohite</footer>
             </div>
         </div>
+    </div>
     
     
     <script src="script.js"></script>
