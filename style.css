@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 350px;
+    margin: 15vh;
+    color: #333;
+    overflow: hidden;
+}
+
+.box {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    display: inline-block;
+}
+
+input, select, button {
+    display: block;
+    margin: 0 auto 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+input::placeholder {
+    color: black;
+}
+
+select {
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+button {
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#result {
+    display: block;  
+    margin: 0 auto 10px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 25px;
+}
+
+details {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+summary {
+    margin-top: 15px;
+    color: black;
+}
+
+.fact {
+    margin-top: 15px;
+}
+
+#warn {
+    color: black;
+}
+
+footer {
+    margin-top: 15px;
+}
+
+.in {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
