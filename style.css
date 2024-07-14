@@ -3,7 +3,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    
+
     background: linear-gradient(to right, #ffefd5, #ffe4e1);
     margin: 0;
 }
@@ -11,12 +13,12 @@ body {
 .container {
     position: relative;
     background: linear-gradient(to right, #ffffff, #f0f0f0);
-    padding: 20px;
+    padding: 2vh;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 350px;
-    margin: 15vh;
+    width: 4000vh;
+    margin: 5vh;
     color: #333;
     overflow: hidden;
 }
@@ -113,7 +115,8 @@ span {
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-right: 50px;
+    margin-right: 30%;
+    margin-left: 10%;
 }
 
 
@@ -146,9 +149,9 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
-    height: 800px;
+    height: 1500px;
     width: 200px;
-    background: linear-gradient(to right, #ffefd5, #f7cbc6);
+    background: linear-gradient(to right, #efd2a4, #ff9c91);
     animation: move 5s infinite;
     opacity: 0.5;
 }
