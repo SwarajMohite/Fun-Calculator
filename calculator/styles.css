@@ -22,6 +22,9 @@ body {
     overflow: hidden;
 }
 
+.container:hover {
+    transform: scale(1.08);
+}
 
 .box {
     padding: 15px;
@@ -53,6 +56,9 @@ input, select, button {
     color: #ffffff;
 }
 
+input::placeholder {
+    color: #aaa;
+}
 
 select {
     background-color: #003366;
@@ -72,4 +78,93 @@ button {
     margin-bottom: 20px;
     width: 70px;
     display: inline-table;
+}
+
+button:hover {
+    background-color: #00274d;
+}
+
+#result {
+    background: #1c2b4e;
+    display: block;
+    width: calc(100% - 30px);
+    margin: 0 auto 10px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    word-break: break-word;
+    margin-top: 25px;
+}
+
+details {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+summary {
+    margin-top: 15px;
+    color: #00bfff;
+}
+
+#feedback-section {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30%;
+    margin-left: 10%;
+}
+
+.fact {
+    margin-top: 15px;
+}
+
+footer {
+    margin-top: 15px;
+    background: linear-gradient(to right, #01859f, #02c3cd);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.in {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #1b263b;
+    z-index: 99;
+}
+
+.out::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    height: 1500px;
+    width: 200px;
+    background: linear-gradient(to right, #003366, #00274d);
+    animation: move 5s infinite;
+    opacity: 0.5;
+}
+
+@keyframes move {
+    100% {
+        transform: translate(-50%, -50%) rotate(225deg);
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+    input, select, button {
+        width: calc(100% - 10px);
+    }
 }
